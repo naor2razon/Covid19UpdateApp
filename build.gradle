@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+    id 'application'
+}
+
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+sourceSets.main.resources.srcDirs("src/main/java").includes.addAll(["**/*.fxml", "**/*.css"])
+sourceSets.main.resources.srcDirs("src/main/resources").includes.addAll(["**/*.*"])
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'com.squareup.retrofit2:retrofit:2.9.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    compile 'org.kordamp.ikonli:ikonli-javafx:11.5.0'
+    compile 'org.kordamp.ikonli:ikonli-fontawesome-pack:11.5.0'
+
+}
+
+javafx {
+    version = "14"
+    modules = [ 'javafx.controls','javafx.base','javafx.graphics','javafx.fxml' ]
+}
+
+mainClassName = 'com.Covid.Main'
