@@ -4,3 +4,6 @@ this prooject using:
 - covid api - https://github.com/javieraviles/covidAPI
 - Retrofit HTTP - https://square.github.io/retrofit
 
+![alt text](https://raw.githubusercontent.com/naor2razon/Covid19UpdateApp/master/desktopApp.png)
+
+
